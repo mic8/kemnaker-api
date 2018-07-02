@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Acme\Api\Http\Controller;
+namespace Kemnaker\Api\Http\Controller;
 
 use Illuminate\Contracts\Support\Responsable;
 use Illuminate\Http\Request;

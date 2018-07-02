@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Acme\Web;
+namespace Kemnaker\Api;
 
 use Pandawa\Component\Module\AbstractModule;
 use Pandawa\Component\Module\Provider\RouteProviderTrait;
@@ -9,7 +9,7 @@ use Pandawa\Component\Module\Provider\RouteProviderTrait;
 /**
  * @author  Iqbal Maulana <iq.bluejack@gmail.com>
  */
-final class AcmeWebModule extends AbstractModule
+final class KemnakerApiModule extends AbstractModule
 {
     use RouteProviderTrait;
 
@@ -18,6 +18,8 @@ final class AcmeWebModule extends AbstractModule
         return [
             [
                 'type'       => 'group',
+                'middleware' => 'api',
+                'prefix'     => 'v{version}',
                 'children'   => $this->getCurrentPath() . '/Resources/routes/routes.yaml',
             ],
         ];

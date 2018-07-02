@@ -1,0 +1,8 @@
+ping:
+    type: get
+    path: ping
+    controller: 'Kemnaker\Api\Http\Controller\PingController@ping'
+
+news:
+    type: group
+    children: news.yaml
