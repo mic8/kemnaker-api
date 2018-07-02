@@ -1,6 +1,7 @@
 <?php
 
 return [
-    Acme\Api\AcmeApiModule::class,
-    Acme\Web\AcmeWebModule::class,
+    Kemnaker\Module\News\KemnakerNewsModule::class,
+
+    Kemnaker\Api\KemnakerApiModule::class,
 ];

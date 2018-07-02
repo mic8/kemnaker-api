@@ -14,7 +14,11 @@
         "laravel/framework": "5.6.*",
         "laravel/tinker": "~1.0",
         "lcobucci/jwt": "^4.0@dev",
-        "pandawa/pandawa": "~0.1@dev"
+        "pandawa/pandawa": "~0.1@dev",
+        "jenssegers/mongodb": "dev-master",
+        "marc-mabe/php-enum": "^3.0",
+        "pandawa/moloquent": "~0.1@dev",
+        "predis/predis": "^1.1"
     },
     "require-dev": {
         "barryvdh/laravel-ide-helper": "^2.4",
@@ -31,8 +35,7 @@
         ],
         "psr-4": {
             "App\\": "app/laravel",
-            "Acme\\Api\\": "app/api/Acme",
-            "Acme\\Web\\": "app/web/Acme",
+            "Kemnaker\\Api\\": "app/api/Kemnaker",
             "": "src/"
         }
     },
