@@ -1,0 +1,13 @@
+authenticate:
+    type: message
+    path: auth
+    message: authenticate
+    methods: [post]
+    rules: [authenticate]
+
+me:
+    type: message
+    path: users/me
+    message: find-authenticated-user
+    methods: [get]
+    middleware: ["auth:api"]

@@ -1,5 +1,4 @@
 news:
-    type: message
-    message: dummy-news
+    type: resource
+    resource: news
     path: news
-    methods: [get]

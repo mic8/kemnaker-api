@@ -1,0 +1,9 @@
+user:
+    constraints:
+        username: "required|max:50|unique:users,username,req(user)"
+        name: "required"
+        email: "required|email|unique:users,email,req(user)"
+
+password:
+    constraints:
+        password: "required"

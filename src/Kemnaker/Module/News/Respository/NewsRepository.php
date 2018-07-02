@@ -10,16 +10,14 @@
 
 declare(strict_types=1);
 
-namespace Kemnaker\Module\News\Query;
+namespace Kemnaker\Module\News\Respository;
 
-use Pandawa\Component\Message\AbstractQuery;
-use Pandawa\Component\Message\NameableMessageInterface;
-use Pandawa\Component\Support\NameableClassTrait;
+use Pandawa\Component\Ddd\Repository\Repository;
 
 /**
  * @author Michael Reynald <michaelreynald78@gmail.com>
  */
-final class DummyNews extends AbstractQuery implements NameableMessageInterface
+final class NewsRepository extends Repository
 {
-    use NameableClassTrait;
+
 }

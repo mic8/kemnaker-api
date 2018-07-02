@@ -1,0 +1,4 @@
+user:
+    type: resource
+    path: users
+    rules: [password, user]
