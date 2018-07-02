@@ -2,3 +2,13 @@ news:
     type: resource
     resource: news
     path: news
+
+feature_news:
+    type: resource
+    resource: news
+    path: feature-news
+    only: [index]
+    options:
+        specs:
+            index:
+                - name: least-five-news
