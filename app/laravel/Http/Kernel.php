@@ -3,6 +3,7 @@
 namespace App\Http;
 
 use App\InjectModuleConfigTrait;
+use Barryvdh\Cors\HandleCors;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 use Illuminate\Routing\Router;
@@ -36,6 +37,7 @@ class Kernel extends HttpKernel
         \App\Http\Middleware\TrimStrings::class,
         \Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull::class,
         \App\Http\Middleware\TrustProxies::class,
+        HandleCors::class,
     ];
 
     /**
