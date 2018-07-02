@@ -68,12 +68,6 @@ class NewsTableSeeder extends Seeder
                 'author'  => 'BERITA NAKER',
                 'content' => 'JENEWA-Indonesia secara tegas mendukung pengesahan amandemen Konvensi Pekerja Maritim (Maritim Labour Convention / MLC) yang mengatur jaminan hak-hak keuangan bagi pela...',
             ],
-            [
-                'id'      => (string)Uuid::uuid4(),
-                'title'   => 'Diluar Dugaan, ILO Apresiasi Program Desmigratif',
-                'author'  => 'BERITA NAKER',
-                'content' => 'JENEWA-Indonesia secara tegas mendukung pengesahan amandemen Konvensi Pekerja Maritim (Maritim Labour Convention / MLC) yang mengatur jaminan hak-hak keuangan bagi pela...',
-            ],
         ];
 
         $newsRepository = new Repository(News::class);
