@@ -11,4 +11,4 @@ feature_news:
     options:
         specs:
             index:
-                - name: least-five-news
+                - name: feature-news

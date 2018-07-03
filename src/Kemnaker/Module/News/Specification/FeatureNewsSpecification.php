@@ -21,7 +21,7 @@ use Pandawa\Component\Ddd\Specification\SpecificationInterface;
 /**
  * @author Michael Reynald <michaelreynald78@gmail.com>
  */
-final class LeastFiveNewsSpecification implements SpecificationInterface, NameableSpecificationInterface
+final class FeatureNewsSpecification implements SpecificationInterface, NameableSpecificationInterface
 {
     use NameableSpecificationTrait;
 
@@ -32,6 +32,6 @@ final class LeastFiveNewsSpecification implements SpecificationInterface, Nameab
     {
         $query
             ->orderBy('created_at', 'DESC')
-            ->limit(5);
+            ->limit(4);
     }
 }
